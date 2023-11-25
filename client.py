@@ -48,6 +48,9 @@ def browseFiles():
         
         ftp_server.dir()
         ftp_server.quit()
+
+        listBox.insert(song_counter, fname) # this line adds the file to the shared text area (listBox) - super crucial!!!
+        song_counter += 1
     except:
         print("Cancel button pressed")
 
